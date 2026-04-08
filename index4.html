@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner - SMK Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fdfdfd; }
+        
+        /* Hero Section dengan Overlay Hijau Segar & Warm */
+        .hero-section {
+            background: linear-gradient(rgba(46, 125, 50, 0.8), rgba(251, 192, 45, 0.7)), 
+                        url('https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        /* Card Utama yang mengambang */
+        .card-main {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-top: -50px;
+            background: white;
+        }
+
+        /* Kotak Ikon Keahlian */
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .bg-chef { background-color: #f1f8e9; color: #2e7d32; }
+        .bg-pastry { background-color: #fffde7; color: #fbc02d; }
+        
+        /* Sidebar Status Pendaftaran */
+        .status-header {
+            background-color: #1a1a1a;
+            color: white;
+            border-radius: 15px 15px 0 0;
+            padding: 12px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .status-body {
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Testimonial & Image */
+        .img-feature {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .footer {
+            background-color: #1a1a1a;
+            color: #999;
+            padding: 25px 0;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-lg-5 px-3">
+        <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="#beranda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43CTWbPBcK3eN9o9fN4UNw87KOG01EWNOmA&s" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-2">
+           <i> University Harvard </i>
+        </a>
+
+        <button class="navbar-toggler border-0 " type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#beranda">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#visi-misi">visi misi</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#data-siswa">Data Siswa</a>
+                </li>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="jurusanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Jurusan
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="jurusanDropdown">
+                        <li><a class="dropdown-item" href="index.html#jurusan-pplg">PPLG</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-tjkt">TJKT</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-kuliner">Kuliner</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-busana">Busana</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-otomotif">Otomotif</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#jurusan">Lihat Semua</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <header class="hero-section text-uppercase">
+        <div class="container">
+            <h1 class="fw-bold">Kuliner (Tata Boga)</h1>
+            <p class="lead mx-auto" style="max-width: 850px; font-size: 1rem; text-transform: none; opacity: 0.95;">
+                Mencetak tenaga profesional di bidang pengolahan dan penyajian makanan yang kreatif, higienis, dan berstandar internasional.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-8">
+                <div class="card card-main p-4 p-md-5">
+                    <h2 class="fw-bold mb-4">Seni Mengolah Rasa & Estetika</h2>
+                    <p class="text-muted mb-5" style="line-height: 1.8; text-align: justify;">
+                        Jurusan Kuliner di SMK Digital tidak hanya mengajarkan cara memasak, tetapi juga manajemen dapur, pengetahuan bahan makanan, hingga seni penyajian (*plating*). Siswa dibekali keterampilan mengolah masakan Nusantara, Kontinental (Barat), dan Oriental (Asia), serta keahlian khusus di bidang Pastry dan Bakery untuk mencetak calon *Chef* dan pengusaha kuliner masa depan.
+                    </p>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-chef me-3">
+                                    <i class="bi bi-egg-fried"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Professional Chef</h6>
+                                    <p class="small text-muted mb-0">Teknik memasak & manajemen dapur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-pastry me-3">
+                                    <i class="bi bi-cake2"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Pastry Art</h6>
+                                    <p class="small text-muted mb-0">Pembuatan kue, roti, dan dekorasi.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h5 class="fw-bold mb-4">Fasilitas Unggulan Kuliner</h5>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Dapur Standar Industri (Kitchen Studio)
+                            <span class="badge bg-success rounded-pill">Lengkap</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Laboratorium Pastry & Bakery
+                            <span class="badge bg-success rounded-pill">Suhu Terkontrol</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Restoran Simulasi (Teaching Factory)
+                            <span class="badge bg-success rounded-pill">Praktek Langsung</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="status-header">STATUS PENDAFTARAN</div>
+                <div class="status-body mb-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <small class="fw-bold">Kuota Terisi</small>
+                        <small class="fw-bold">75%</small>
+                    </div>
+                    <div class="progress mb-4" style="height: 8px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 75%"></div>
+                    </div>
+                    <button class="btn btn-success w-100 fw-bold py-2 shadow-sm mb-3">DAFTAR KULINER SEKARANG</button>
+                    <div class="text-center">
+                        <a href="#" class="text-decoration-none text-muted small"><i class="bi bi-arrow-left"></i> Kembali ke Beranda</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm" style="border-radius: 15px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1577214411470-02367dc8f587?auto=format&fit=crop&w=600&q=80" class="img-feature" alt="Kegiatan Kuliner">
+                    <div class="card-body">
+                        <p class="card-text fst-italic text-muted small">
+                            "Belajar di sini sangat seru! Kami tidak hanya diajarkan resep, tapi juga bagaimana cara menghitung modal dan harga jual produk."
+                        </p>
+                        <h6 class="fw-bold mb-0" style="font-size: 0.9rem;">- Siti Aminah, Alumni 2024</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">© 2026 SMK DIGITAL. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

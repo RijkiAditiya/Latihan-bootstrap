@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKJ - SMK Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8f9fa; }
+        
+        /* Hero Section dengan Overlay Biru Gelap sesuai tema IT */
+        .hero-section {
+            background: linear-gradient(rgba(20, 40, 80, 0.85), rgba(30, 60, 120, 0.85)), 
+                        url('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 70px 0;
+            text-align: center;
+        }
+
+        /* Card Utama yang mengambang */
+        .card-main {
+            border-radius: 15px;
+            border: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-top: -50px; /* Memberikan efek overlap ke hero */
+            background: white;
+        }
+
+        /* Kotak Ikon Keahlian */
+        .icon-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .bg-network { background-color: #eef2ff; color: #4338ca; }
+        .bg-security { background-color: #ecfdf5; color: #059669; }
+        
+        /* Sidebar Status Pendaftaran */
+        .status-header {
+            background-color: #1f2937;
+            color: white;
+            border-radius: 15px 15px 0 0;
+            padding: 12px;
+            text-align: center;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+        .status-body {
+            background: white;
+            border-radius: 0 0 15px 15px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* Testimonial & Image */
+        .img-feature {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px 15px 0 0;
+        }
+        
+        .footer {
+            background-color: #111827;
+            color: #9ca3af;
+            padding: 25px 0;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-lg-5 px-3">
+        <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="#beranda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43CTWbPBcK3eN9o9fN4UNw87KOG01EWNOmA&s" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-2">
+           <i> University Harvard </i>
+        </a>
+
+        <button class="navbar-toggler border-0 " type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#beranda">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#visi-misi">visi misi</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#data-siswa">Data Siswa</a>
+                </li>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="jurusanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Jurusan
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="jurusanDropdown">
+                        <li><a class="dropdown-item" href="index.html#jurusan-pplg">PPLG</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-tjkt">TJKT</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-kuliner">Kuliner</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-busana">Busana</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-otomotif">Otomotif</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#jurusan">Lihat Semua</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <header class="hero-section text-uppercase">
+        <div class="container">
+            <h1 class="fw-bold">Teknik Komputer dan Jaringan</h1>
+            <p class="lead mx-auto" style="max-width: 850px; font-size: 1rem; text-transform: none; opacity: 0.9;">
+                Membekali siswa dengan keahlian perakitan komputer, instalasi jaringan, serta pengelolaan server dan keamanan siber skala industri.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-8">
+                <div class="card card-main p-4 p-md-5">
+                    <h2 class="fw-bold mb-4">Menghubungkan Dunia Lewat Infrastruktur IT</h2>
+                    <p class="text-muted mb-5" style="line-height: 1.8; text-align: justify;">
+                        Program keahlian TKJ berfokus pada penguasaan perangkat keras dan infrastruktur jaringan komputer. Siswa akan belajar mulai dari dasar-dasar perakitan PC, teknik instalasi sistem operasi, konfigurasi router (MikroTik/Cisco), hingga manajemen Cloud Computing. Kami menyiapkan lulusan yang mampu merancang jaringan lokal (LAN) maupun luas (WAN) yang aman dan efisien.
+                    </p>
+
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-network me-3">
+                                    <i class="bi bi-router"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Network Admin</h6>
+                                    <p class="small text-muted mb-0">Manajemen router & jaringan fiber optic.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box bg-security me-3">
+                                    <i class="bi bi-shield-check"></i>
+                                </div>
+                                <div>
+                                    <h6 class="fw-bold mb-0">Cyber Security</h6>
+                                    <p class="small text-muted mb-0">Perlindungan data & sistem jaringan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h5 class="fw-bold mb-4">Fasilitas Unggulan TKJ</h5>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Laboratorium Jaringan & Fiber Optic
+                            <span class="badge bg-primary rounded-pill">3 Lab Utama</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            MikroTik & Cisco Academy
+                            <span class="badge bg-primary rounded-pill">Sertifikasi Internasional</span>
+                        </div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">
+                            Praktek Cloud Server
+                            <span class="badge bg-primary rounded-pill">Akses 24 Jam</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="status-header">STATUS PENDAFTARAN</div>
+                <div class="status-body mb-4">
+                    <div class="d-flex justify-content-between mb-2">
+                        <small class="fw-bold">Kuota Terisi</small>
+                        <small class="fw-bold">85%</small>
+                    </div>
+                    <div class="progress mb-4" style="height: 8px;">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" style="width: 85%"></div>
+                    </div>
+                    <button class="btn btn-primary w-100 fw-bold py-2 shadow-sm mb-3">DAFTAR TKJ SEKARANG</button>
+                    <div class="text-center">
+                        <a href="#" class="text-decoration-none text-muted small"><i class="bi bi-arrow-left"></i> Kembali ke Beranda</a>
+                    </div>
+                </div>
+
+                <div class="card border-0 shadow-sm" style="border-radius: 15px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1597733336794-12d05021d510?auto=format&fit=crop&w=600&q=80" class="img-feature" alt="Kegiatan TKJ">
+                    <div class="card-body">
+                        <p class="card-text fst-italic text-muted small">
+                            "Kurikulum TKJ di sini sangat relevan dengan industri, saya belajar konfigurasi server yang digunakan perusahaan besar."
+                        </p>
+                        <h6 class="fw-bold mb-0" style="font-size: 0.9rem;">- Rizky Pratama, Alumni 2025</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">© 2026 SMK DIGITAL. Seluruh Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

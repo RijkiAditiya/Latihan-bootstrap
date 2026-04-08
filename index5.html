@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busana - SMK Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fff9fb; }
+        .hero-section {
+            background: linear-gradient(rgba(142, 68, 173, 0.8), rgba(253, 121, 168, 0.8)), 
+                        url('https://images.unsplash.com/photo-1556905055-8f358a7a4bb4?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover; background-position: center; color: white; padding: 70px 0; text-align: center;
+        }
+        .card-main { border-radius: 15px; border: none; box-shadow: 0 4px 20px rgba(150,0,150,0.08); margin-top: -50px; background: white; }
+        .icon-box { width: 50px; height: 50px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; }
+        .bg-design { background-color: #f3e5f5; color: #8e44ad; }
+        .bg-tailor { background-color: #fce4ec; color: #d81b60; }
+        .status-header { background-color: #2d3436; color: white; border-radius: 15px 15px 0 0; padding: 12px; text-align: center; font-weight: bold; }
+        .status-body { background: white; border-radius: 0 0 15px 15px; padding: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .img-feature { width: 100%; height: 200px; object-fit: cover; border-radius: 15px 15px 0 0; }
+        .footer { background-color: #2d3436; color: #999; padding: 25px 0; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid px-lg-5 px-3">
+        <a class="navbar-brand text-white fw-bold d-flex align-items-center" href="#beranda">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ43CTWbPBcK3eN9o9fN4UNw87KOG01EWNOmA&s" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-2">
+           <i> University Harvard </i>
+        </a>
+
+        <button class="navbar-toggler border-0 " type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbarMain">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#beranda">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#visi-misi">visi misi</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html#data-siswa">Data Siswa</a>
+                </li>
+                   <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="jurusanDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Jurusan
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="jurusanDropdown">
+                        <li><a class="dropdown-item" href="index.html#jurusan-pplg">PPLG</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-tjkt">TJKT</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-kuliner">Kuliner</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-busana">Busana</a></li>
+                        <li><a class="dropdown-item" href="index.html#jurusan-otomotif">Otomotif</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#jurusan">Lihat Semua</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <header class="hero-section text-uppercase">
+        <div class="container">
+            <h1 class="fw-bold">Tata Busana (Fashion Design)</h1>
+            <p class="lead mx-auto" style="max-width: 850px; font-size: 1rem; text-transform: none; opacity: 0.95;">
+                Mengembangkan kreativitas dalam merancang, menjahit, hingga membangun bisnis fashion yang berdaya saing global.
+            </p>
+        </div>
+    </header>
+
+    <main class="container mb-5">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="card card-main p-4 p-md-5">
+                    <h2 class="fw-bold mb-4">Mahakarya Seni dalam Balutan Kain</h2>
+                    <p class="text-muted mb-5" style="line-height: 1.8; text-align: justify;">
+                        Siswa Tata Busana dibekali dengan kemampuan hulu ke hilir industri fashion. Mulai dari menggambar sketsa anatomi, membuat pola dasar hingga digital, teknik menjahit tingkat butik, hingga teknik menghias busana (embroidery). Lulusan kami dipersiapkan untuk menjadi Fashion Designer, Pattern Maker, maupun Fashion Entrepreneur.
+                    </p>
+                    <div class="row g-4 mb-5">
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="icon-box bg-design me-3"><i class="bi bi-palette"></i></div>
+                            <div><h6 class="fw-bold mb-0">Fashion Illustrator</h6><p class="small text-muted mb-0">Desain sketsa & pemilihan bahan.</p></div>
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="icon-box bg-tailor me-3"><i class="bi bi-scissors"></i></div>
+                            <div><h6 class="fw-bold mb-0">Couture Tailoring</h6><p class="small text-muted mb-0">Teknik menjahit kualitas tinggi.</p></div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <h5 class="fw-bold mb-4">Fasilitas Studio</h5>
+                    <div class="list-group list-group-flush">
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">Mesin Jahit High Speed & Digital<span class="badge bg-purple rounded-pill" style="background-color: #8e44ad;">Tersedia</span></div>
+                        <div class="list-group-item d-flex justify-content-between align-items-center px-0">Studio Fashion Show & Fitting Room<span class="badge bg-purple rounded-pill" style="background-color: #8e44ad;">Eksklusif</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="status-header">STATUS PENDAFTARAN</div>
+                <div class="status-body mb-4">
+                    <div class="d-flex justify-content-between mb-2"><small class="fw-bold">Kuota Terisi</small><small class="fw-bold">60%</small></div>
+                    <div class="progress mb-4" style="height: 8px;"><div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%; background-color: #d81b60;"></div></div>
+                    <button class="btn w-100 fw-bold py-2 shadow-sm mb-3 text-white" style="background-color: #8e44ad;">DAFTAR BUSANA</button>
+                </div>
+                <div class="card border-0 shadow-sm" style="border-radius: 15px; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=600&q=80" class="img-feature" alt="Produksi Busana">
+                    <div class="card-body">
+                        <p class="card-text fst-italic text-muted small">"Bisa bikin baju rancangan sendiri dan dipamerkan di fashion show sekolah itu bangga banget!"</p>
+                        <h6 class="fw-bold mb-0" style="font-size: 0.9rem;">- Clarissa, Alumni 2024</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer text-center"><div class="container">© 2026 SMK DIGITAL.</div></footer>
+</body>
+</html>
